@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.marhacker.rss">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".nonetcon" />
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".readstory" />
+        <activity android:name=".world" />
+        <activity android:name=".cricket" />
+        <activity android:name=".people" />
+        <activity android:name=".latest" />
+        <activity android:name=".business" />
+        <activity android:name=".indianbro" />
+        <activity android:name=".hindi" />
+        <activity android:name=".auto" />
+        <activity android:name=".health" />
+        <activity android:name=".india" />
+        <activity android:name=".sportss" />
+        <activity android:name=".cities" />
+        <activity android:name=".offbeat" />
+        <activity android:name=".top" />
+    </application>
+
+</manifest>
