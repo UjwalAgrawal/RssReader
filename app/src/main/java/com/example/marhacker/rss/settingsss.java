@@ -1,12 +1,17 @@
 package com.example.marhacker.rss;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
+import android.widget.Switch;
+import android.widget.TextView;
 
 
 /**
@@ -64,7 +69,24 @@ public class settingsss extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_settingsss, container, false);
+        View v= inflater.inflate(R.layout.fragment_settingsss, container, false);
+        TextView tt = (TextView)v.findViewById(R.id.proaudes);
+        TextView ta = (TextView)v.findViewById(R.id.audes);
+        ta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(),AppDev.class);
+                startActivity(i);
+            }
+        });
+        tt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/MRTHAKER/RssReader"));
+                startActivity(i);
+            }
+        });
+        return v;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

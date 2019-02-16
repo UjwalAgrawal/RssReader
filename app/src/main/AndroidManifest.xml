@@ -7,11 +7,15 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@mipmap/logo"
+        android:label="Kinky Feed"
+        android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".AppDev"
+            android:label="@string/title_activity_app_dev"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,9 +24,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".nonetcon" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".readstory" />
         <activity android:name=".world" />
         <activity android:name=".cricket" />

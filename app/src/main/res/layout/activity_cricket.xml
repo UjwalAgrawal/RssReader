@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/cardview_dark_background"
     tools:context=".cricket">
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/cricfresh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 <ListView
+    android:paddingTop="55dp"
     android:id="@+id/cricklist"
     android:nestedScrollingEnabled="true"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"

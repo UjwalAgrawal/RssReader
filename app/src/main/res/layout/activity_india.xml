@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_dark_background"
     android:orientation="vertical"
     tools:context=".india">
     <android.support.v4.widget.SwipeRefreshLayout
@@ -12,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 <ListView
+    android:paddingTop="55dp"
     android:id="@+id/indialis"
     android:nestedScrollingEnabled="true"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"

@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cardview_dark_background"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".MainActivity">
@@ -28,13 +27,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="9"
-        android:paddingTop="40dp"></FrameLayout>
+        android:paddingTop="40dp">
+    </FrameLayout>
 
     <android.support.design.widget.BottomNavigationView xmlns:design="http://schema.android.com/apk/res/android.support.design"
         android:id="@+id/btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="20dp"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        android:paddingTop="5dp"
         android:background="@color/cardview_dark_background"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
