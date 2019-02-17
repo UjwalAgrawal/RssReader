@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".AppDev">
 
     <ImageView
@@ -18,7 +17,7 @@
 <TextView
     android:text="Hello Everyone, my name is Mahek Thaker, I have huge interest in android since past 3-4 years starting my journey with Android Custom Roms and moving further with apps and relatable works, I am student of BCA studying from saurastra university."
     android:layout_width="match_parent"
-    android:textSize="28dp"
+    android:textSize="20dp"
     android:textAlignment="center"
     android:textColor="@color/colorTransparentWhite"
     android:layout_height="wrap_content" />
