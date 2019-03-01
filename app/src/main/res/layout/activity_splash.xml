@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/colorAccent"
         android:background="@color/cardview_dark_background"
-        android:text="Welcome To Kinky Feed"
+        android:text="Welcome To Nitro Feed"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         android:textSize="38dp" />
