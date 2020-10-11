@@ -11,27 +11,38 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class splash extends AppCompatActivity {
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        new Timer().schedule(new TimerTask() {
-            @Override
-            public void run() {
-                if(isNetworkStatusAvialable (getApplicationContext())) {
-                    Intent ii = new Intent(getApplicationContext(),MainActivity.class);
-                    ii.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    startActivity(ii);
-                    finish();
-                }else {
-                    Intent ii = new Intent(getApplicationContext(),nonetcon.class);
-                    ii.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                    startActivity(ii);
+
+//        getSupportActionBar().hide();
+
+
+        Thread thread=new Thread(){
+            public void run(){
+                try{
+                    sleep(2000);
+
+                }
+                catch(Exception e){
+                    e.printStackTrace();
+
+                }
+                finally{
+                    intent=new Intent(splash.this, MainActivity.class);
+                    startActivity(intent);
                     finish();
                 }
+
+
             }
-        }, 5000);
+
+        };
+        thread.start();
+
     }
 
 

@@ -1,5 +1,6 @@
 package com.nitro.rss;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity implements TopNews.OnFragmen
         setContentView(R.layout.activity_main);
             Toolbar toolbar = (Toolbar) findViewById(R.id.tuba);
             setSupportActionBar(toolbar);
-            getSupportActionBar().setTitle("Nitro Feed");
+            getSupportActionBar().setTitle("News Feed");
             frame = (FrameLayout)findViewById(R.id.pager);
             final TopNews top = new TopNews();
             final rss_frag rss =new rss_frag();

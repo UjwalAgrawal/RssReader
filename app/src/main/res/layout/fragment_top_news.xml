@@ -6,17 +6,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".TopNews">
+
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/topfresh"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    <ListView
-        android:paddingTop="20dp"
-        android:id="@+id/lav"
-        android:layout_width="wrap_content"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:nestedScrollingEnabled="true"
-        android:layout_height="wrap_content">
-    </ListView>
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+
+        <ListView
+            android:id="@+id/lav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="true"
+            android:paddingTop="20dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"></ListView>
     </android.support.v4.widget.SwipeRefreshLayout>
 </LinearLayout>

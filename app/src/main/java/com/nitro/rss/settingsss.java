@@ -79,7 +79,7 @@ public class settingsss extends Fragment {
         tt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/MRTHAKER/RssReader"));
+                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/UjwalAgrawal/RssReader"));
                 startActivity(i);
             }
         });
